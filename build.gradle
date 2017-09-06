@@ -8,6 +8,11 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
 }
+test {
+    useTestNG {
+        suites 'src/main/resources/testng.xml'
+    }
+}
 
 dependencies {
     // https://mvnrepository.com/artifact/org.testng/testng
