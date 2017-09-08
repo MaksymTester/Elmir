@@ -29,7 +29,7 @@ public class CameraPage {
     }
 
     private final static String SORTING_BY = ".//*[contains(text(),'Сортировать по:')]/following-sibling::div/span";
-    private final static String SORTING_PRICE = "(.//*[contains(text(),'возрастанию цены')])[1]";
+    private final static String SORTING_BY_PRICE = "(.//*[contains(text(),'возрастанию цены')])[1]";
     private final static String SHOW_BY = ".//*[contains(text(),'Показывать:')]/following-sibling::div/span";
     private final static String SHOW_TILE = ".//*[contains(text(),'плиткой')]";
 
@@ -40,7 +40,7 @@ public class CameraPage {
     @FindBy(xpath = SORTING_BY)
     protected WebElement sortingBy;
 
-    @FindBy(xpath = SORTING_PRICE)
+    @FindBy(xpath = SORTING_BY_PRICE)
     protected WebElement sortingPrice;
 
     @FindBy(xpath = CART_BUTTON)
